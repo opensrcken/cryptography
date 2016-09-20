@@ -1281,7 +1281,8 @@ class Backend(object):
             )
 
         else:
-            print errors
+            print(errors)
+            
             assert errors[0][1] in (
                 self._lib.ERR_LIB_EVP,
                 self._lib.ERR_LIB_PEM,
